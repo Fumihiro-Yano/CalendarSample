@@ -13,6 +13,7 @@
 		E769514E1CD71EB700D6F6A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E769514C1CD71EB700D6F6A4 /* LaunchScreen.storyboard */; };
 		E76951591CD71EB700D6F6A4 /* CalendarSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76951581CD71EB700D6F6A4 /* CalendarSampleTests.swift */; };
 		E76951641CD71EB700D6F6A4 /* CalendarSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76951631CD71EB700D6F6A4 /* CalendarSampleUITests.swift */; };
+		E76951721CD729C900D6F6A4 /* BaseCalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E76951711CD729C900D6F6A4 /* BaseCalendarViewController.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		E769515F1CD71EB700D6F6A4 /* CalendarSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalendarSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E76951631CD71EB700D6F6A4 /* CalendarSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarSampleUITests.swift; sourceTree = "<group>"; };
 		E76951651CD71EB700D6F6A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E76951711CD729C900D6F6A4 /* BaseCalendarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseCalendarViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				E769514A1CD71EB700D6F6A4 /* Assets.xcassets */,
 				E769514C1CD71EB700D6F6A4 /* LaunchScreen.storyboard */,
 				E769514F1CD71EB700D6F6A4 /* Info.plist */,
+				E76951711CD729C900D6F6A4 /* BaseCalendarViewController.xib */,
 			);
 			path = CalendarSample;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E76951721CD729C900D6F6A4 /* BaseCalendarViewController.xib in Resources */,
 				E769514E1CD71EB700D6F6A4 /* LaunchScreen.storyboard in Resources */,
 				E769514B1CD71EB700D6F6A4 /* Assets.xcassets in Resources */,
 			);
