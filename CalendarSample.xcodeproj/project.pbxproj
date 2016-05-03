@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E721A4831CD76BC200B94EEA /* BaseCalendarViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E721A4821CD76BC200B94EEA /* BaseCalendarViewLayout.swift */; settings = {ASSET_TAGS = (); }; };
 		E76951441CD71EB700D6F6A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76951431CD71EB700D6F6A4 /* AppDelegate.swift */; };
 		E76951461CD71EB700D6F6A4 /* BaseCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76951451CD71EB700D6F6A4 /* BaseCalendarViewController.swift */; };
 		E769514B1CD71EB700D6F6A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E769514A1CD71EB700D6F6A4 /* Assets.xcassets */; };
@@ -14,6 +15,8 @@
 		E76951591CD71EB700D6F6A4 /* CalendarSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76951581CD71EB700D6F6A4 /* CalendarSampleTests.swift */; };
 		E76951641CD71EB700D6F6A4 /* CalendarSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76951631CD71EB700D6F6A4 /* CalendarSampleUITests.swift */; };
 		E76951721CD729C900D6F6A4 /* BaseCalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E76951711CD729C900D6F6A4 /* BaseCalendarViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		E76951741CD72E2100D6F6A4 /* BaseCalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76951731CD72E2100D6F6A4 /* BaseCalendarCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		E76951761CD72E6C00D6F6A4 /* BaseCalendarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E76951751CD72E6C00D6F6A4 /* BaseCalendarCollectionViewCell.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E721A4821CD76BC200B94EEA /* BaseCalendarViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCalendarViewLayout.swift; sourceTree = "<group>"; };
 		E76951401CD71EB700D6F6A4 /* CalendarSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E76951431CD71EB700D6F6A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E76951451CD71EB700D6F6A4 /* BaseCalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCalendarViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 		E76951631CD71EB700D6F6A4 /* CalendarSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarSampleUITests.swift; sourceTree = "<group>"; };
 		E76951651CD71EB700D6F6A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E76951711CD729C900D6F6A4 /* BaseCalendarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseCalendarViewController.xib; sourceTree = "<group>"; };
+		E76951731CD72E2100D6F6A4 /* BaseCalendarCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCalendarCollectionViewCell.swift; sourceTree = "<group>"; };
+		E76951751CD72E6C00D6F6A4 /* BaseCalendarCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseCalendarCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,9 @@
 				E769514C1CD71EB700D6F6A4 /* LaunchScreen.storyboard */,
 				E769514F1CD71EB700D6F6A4 /* Info.plist */,
 				E76951711CD729C900D6F6A4 /* BaseCalendarViewController.xib */,
+				E76951731CD72E2100D6F6A4 /* BaseCalendarCollectionViewCell.swift */,
+				E76951751CD72E6C00D6F6A4 /* BaseCalendarCollectionViewCell.xib */,
+				E721A4821CD76BC200B94EEA /* BaseCalendarViewLayout.swift */,
 			);
 			path = CalendarSample;
 			sourceTree = "<group>";
@@ -234,6 +243,7 @@
 				E76951721CD729C900D6F6A4 /* BaseCalendarViewController.xib in Resources */,
 				E769514E1CD71EB700D6F6A4 /* LaunchScreen.storyboard in Resources */,
 				E769514B1CD71EB700D6F6A4 /* Assets.xcassets in Resources */,
+				E76951761CD72E6C00D6F6A4 /* BaseCalendarCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E76951461CD71EB700D6F6A4 /* BaseCalendarViewController.swift in Sources */,
+				E721A4831CD76BC200B94EEA /* BaseCalendarViewLayout.swift in Sources */,
 				E76951441CD71EB700D6F6A4 /* AppDelegate.swift in Sources */,
+				E76951741CD72E2100D6F6A4 /* BaseCalendarCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +490,7 @@
 				E769516A1CD71EB700D6F6A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E769516B1CD71EB700D6F6A4 /* Build configuration list for PBXNativeTarget "CalendarSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -486,6 +499,7 @@
 				E769516D1CD71EB700D6F6A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E769516E1CD71EB700D6F6A4 /* Build configuration list for PBXNativeTarget "CalendarSampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +508,7 @@
 				E76951701CD71EB700D6F6A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
