@@ -8,9 +8,11 @@
 
 import UIKit
 
+//定数
 let dateManager = DateManager()
 let reuseIdentifier = "BaseCalendarCollectionViewCell"
 let cellMargin:CGFloat = 2.0
+let cellHeight:CGFloat = 75
 let cellLineCount:NSInteger = 7
 let weekArray = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 
@@ -22,10 +24,12 @@ class BaseCalendarViewController: UIViewController, UICollectionViewDataSource, 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        calendarDayLabel.text = changeHeaderTitle(dateManager.firstDateOfMonth())
+        //ヘッダー部分のラベルに、年と月だけの形に変えたselectedDateをセット
+        calendarDayLabel.text = changeHeaderTitle(selectedDate)
         calendarCollectionView.registerNib(UINib(nibName: "BaseCalendarCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
         calendarCollectionView.delegate = self
         calendarCollectionView.dataSource = self
+        //カスタムレイアウトは使わない。一旦
 //        calendarCollectionView.collectionViewLayout = BaseCalendarViewLayout()
     }
 
@@ -34,7 +38,7 @@ class BaseCalendarViewController: UIViewController, UICollectionViewDataSource, 
         
     }
     
-    //headerの月を変更
+    //ヘッダー部分のラベルの部分に表示するフォーマットに帰るメソッド
     func changeHeaderTitle(date: NSDate) -> String {
         let formatter: NSDateFormatter = NSDateFormatter()
         formatter.dateFormat = "yyyy年MM月"
@@ -42,25 +46,28 @@ class BaseCalendarViewController: UIViewController, UICollectionViewDataSource, 
         return selectMonth
     }
     
+    //前の月を表示するボタンのアクションメソッド
     @IBAction func tappedHeaderPrevBtn(sender: UIButton) {
         selectedDate = dateManager.prevMonth(selectedDate)
         calendarCollectionView.reloadData()
         calendarDayLabel.text = changeHeaderTitle(selectedDate)
     }
     
+    //次の月を表示するボタンのアクションメソッド
     @IBAction func tappedHeaderNextBtn(sender: UIButton) {
         selectedDate = dateManager.nextMonth(selectedDate)
         calendarCollectionView.reloadData()
         calendarDayLabel.text = changeHeaderTitle(selectedDate)
     }
-    // MARK: UICollectionViewDataSource
     
+    // MARK: UICollectionViewDataSource
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 2
     }
     
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        //セクション0：曜日　セクション1：各月の曜日分のセル数
         if section == 0 {
             return cellLineCount
         }else {
@@ -68,8 +75,10 @@ class BaseCalendarViewController: UIViewController, UICollectionViewDataSource, 
         }
 }
     
+    //セルの大きさをきめるメソッド
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        return CGSizeMake((self.view.frame.width - cellMargin * CGFloat(cellLineCount))/CGFloat(cellLineCount), 75)
+        //セルのwidthは端末に合わせてぴったり7つ並ぶように指定。
+        return CGSizeMake((self.view.frame.width - cellMargin * CGFloat(cellLineCount))/CGFloat(cellLineCount), cellHeight)
     }
     
     //セルの垂直方向のマージンを設定
@@ -82,6 +91,7 @@ class BaseCalendarViewController: UIViewController, UICollectionViewDataSource, 
         return cellMargin
     }
 
+    //セルのテキストや色を指定するメソッド
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell : BaseCalendarCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! BaseCalendarCollectionViewCell
         
@@ -92,12 +102,14 @@ class BaseCalendarViewController: UIViewController, UICollectionViewDataSource, 
         } else {
             cell.collectionLabel?.textColor = UIColor.grayColor()
         }
-        //テキスト配置
+        
+        //テキスト指定
         if indexPath.section == 0 {
+            //曜日のテキスト
             cell.collectionLabel?.text = weekArray[indexPath.row]
         } else {
+            //日にちのテキスト
             cell.collectionLabel?.text = dateManager.conversionDateFormat(indexPath)
-            //月によって1日の場所は異なる(後ほど説明します)
         }
         cell.backgroundColor = UIColor.whiteColor()
         return cell

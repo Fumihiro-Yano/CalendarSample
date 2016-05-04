@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E721A4831CD76BC200B94EEA /* BaseCalendarViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E721A4821CD76BC200B94EEA /* BaseCalendarViewLayout.swift */; settings = {ASSET_TAGS = (); }; };
 		E74A39761CD86A3C00531E1E /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74A39751CD86A3C00531E1E /* DateManager.swift */; settings = {ASSET_TAGS = (); }; };
 		E74A39781CD86E0C00531E1E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74A39771CD86E0C00531E1E /* UIColor.swift */; settings = {ASSET_TAGS = (); }; };
 		E76951441CD71EB700D6F6A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76951431CD71EB700D6F6A4 /* AppDelegate.swift */; };
@@ -39,7 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E721A4821CD76BC200B94EEA /* BaseCalendarViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCalendarViewLayout.swift; sourceTree = "<group>"; };
 		E74A39751CD86A3C00531E1E /* DateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
 		E74A39771CD86E0C00531E1E /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		E76951401CD71EB700D6F6A4 /* CalendarSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,7 +113,6 @@
 				E76951711CD729C900D6F6A4 /* BaseCalendarViewController.xib */,
 				E76951731CD72E2100D6F6A4 /* BaseCalendarCollectionViewCell.swift */,
 				E76951751CD72E6C00D6F6A4 /* BaseCalendarCollectionViewCell.xib */,
-				E721A4821CD76BC200B94EEA /* BaseCalendarViewLayout.swift */,
 				E74A39751CD86A3C00531E1E /* DateManager.swift */,
 				E74A39771CD86E0C00531E1E /* UIColor.swift */,
 			);
@@ -277,7 +274,6 @@
 				E76951461CD71EB700D6F6A4 /* BaseCalendarViewController.swift in Sources */,
 				E74A39781CD86E0C00531E1E /* UIColor.swift in Sources */,
 				E74A39761CD86A3C00531E1E /* DateManager.swift in Sources */,
-				E721A4831CD76BC200B94EEA /* BaseCalendarViewLayout.swift in Sources */,
 				E76951441CD71EB700D6F6A4 /* AppDelegate.swift in Sources */,
 				E76951741CD72E2100D6F6A4 /* BaseCalendarCollectionViewCell.swift in Sources */,
 			);
