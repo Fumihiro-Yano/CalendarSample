@@ -17,12 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         navigationController = UINavigationController()
-        let viewController: ViewController = ViewController()
+        let baseCalenderViewController: BaseCalendarViewController = BaseCalendarViewController()
         
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
         //rootViewControllerにviewControllerを指定
-        self.window!.rootViewController = viewController
+        self.window!.rootViewController = baseCalenderViewController
         
         self.window!.backgroundColor = UIColor.whiteColor()
         self.window!.makeKeyAndVisible()
